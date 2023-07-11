@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,600;1,300;1,400&display=swap');
+
+:root {
+    display: flex;
+    justify-content: center;
+
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+
+    --primary-color: #fff;
+    --secondary-color: #444;
+
+    ::selection {
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+    }
+}
+
+.content {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    width: 650px;
+    margin: 10px auto;
+    padding: 0 10px;
+}
+
+/* ================ <NAV/HEADER> ================ */
+.nav {
+    font-family: 'JetBrains Mono', monospace;
+    border-bottom-style: dashed;
+
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.nav h1 {
+    font-size: 1em;
+}
+
+.nav a {
+    font-style: italic;
+    font-size: 15px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.nav a:hover {
+    text-decoration: none;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+/* ================ </NAV/HEADER> ================ */
+
+a {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    text-decoration: underline;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.3%;
+}
+
+/* ================ <> ================ */
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.projects div {
+    flex-grow: 1;
+    width: 250px;
+    padding: 1em;
+    border-radius: 10px;
+    border-style: dotted solid solid dotted;
+}
+
+/* ================ </> ================ */
+
+/* ================ <> ================ */
+
+#contacts {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+#contacts p {
+    margin: 0
+}
+
+#contacts a {
+    padding: 2px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 1px solid;
+}
+
+#contacts a:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* ================ </> ================ */
+
+footer {
+    text-align: center;
+}
